@@ -3,8 +3,8 @@ import { BrowserRouter, NavLink } from "react-router-dom"
 function App() {
   return (
     <BrowserRouter>
-      <div >
-        <ul className="flex mx-auto gap-5 mt-6 font-bold text-lg border border-gray-500 p-2.5 rounded-full w-fit shadow-lg select-none">
+      <div>
+        <ul className="flex mx-auto gap-3 mt-6 font-bold text-lg border border-gray-500 bg-white p-2.5 rounded-full w-fit shadow-lg select-none">
           <li>
             <NavLink
               to="/home"

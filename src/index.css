@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --color-pastel-green: #F5F9FA;
+}
 
 .nav-link {
   @apply inline-block px-5 py-1 rounded-full border-2 border-transparent;
@@ -6,7 +9,7 @@
 
 .nav-link.active {
   @apply text-blue-600 bg-gray-200 border-gray-300 shadow-sm;
-  animation: bounceText 0.5s ease-in-out;
+  animation: bounceText 0.3s ease-in-out;
 }
 
 @keyframes bounceText {
@@ -19,6 +22,10 @@
 
 /* :root {
 transition-transform duration-300 scale-105
+
+.nav-link {
+  @apply inline-block px-5 py-1 rounded-full border-2 border-transparent text-gray-600 bg-gray-400;
+}
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
