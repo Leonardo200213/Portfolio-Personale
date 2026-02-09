@@ -1,14 +1,16 @@
 @import "tailwindcss";
 @theme {
-  --color-pastel-green: #F5F9FA;
+  --color-pastel-beige: #F7F3EE;
+  --color-dark-yellow: #ad7a13;
+  --color-dark-brown: #8B5E3C;
 }
 
 .nav-link {
-  @apply inline-block px-5 py-1 rounded-full border-2 border-transparent;
+  @apply inline-block px-7 py-1 rounded-full border-2 border-transparent;
 }
 
 .nav-link.active {
-  @apply text-blue-600 bg-gray-200 border-gray-300 shadow-sm;
+  @apply text-dark-yellow bg-gray-200 border-gray-300 shadow-sm;
   animation: bounceText 0.3s ease-in-out;
 }
 
