@@ -1,20 +1,23 @@
 type CardProps = {
 	name: string;
+    link?: string;
     variant: "gameCard" | "bookCard" | "videoCard";
 };
 
-export default function Card({ name, variant }: CardProps) {
+export default function Card({ name, variant, link }: CardProps) {
 
     const variantClass = {
-        gameCard: "transition transform duration-200 ease-in-out hover:scale-105 m-3 w-26 h-35 md:w-35 h-50 block hover:shadow-xl",
-        bookCard: "transition transform duration-2000 ease-in-out hover:scale-105 m-3 w-26 h-35 md:w-80 md:h-50 rounded-md block hover:shadow-xl",
-        //videocard e bookcard da sistemare, solo placeholder
+        gameCard: "transition transform duration-200 ease-in-out cursor-pointer hover:scale-105 m-3 w-32 h-30 md:w-35 h-50 block hover:shadow-xl",
+        bookCard: "transition transform duration-200 ease-in-out cursor-pointer hover:scale-105 m-3 w-26 border-2 border-black bg-white h-35 md:w-60 md:h-75 rounded-md block hover:shadow-xl",
+        //videocard da sistemare, solo placeholder
         videoCard: "transition transform duration-5000 ease-in-out hover:scale-105 m-3 w-26 h-35 md:w-80 md:h-50 rounded-md block hover:shadow-xl",
     };
 
 
 	return (
-		<div className={`inline-block ${variantClass[variant]}`}>
+		<div
+            onClick={() => window.open(link, '_blank')} 
+            className={`inline-block ${variantClass[variant]}`}>
 		    <img src={name} className="w-full h-full rounded-md hover:shadow-xl"/>
 		</div>
 	);
