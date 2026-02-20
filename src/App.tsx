@@ -1,5 +1,6 @@
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom"
 import Hobby from "./pages/Hobby.tsx"
+import Home from "./pages/Home.tsx"
 import Dark from "./components/toggleDark.tsx"
 
 function App() {
@@ -41,11 +42,14 @@ function App() {
           </div>
 
           <Routes>
+            {/**collegamenti alle pagine */}
             <Route path="/hobby" element={<Hobby />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </BrowserRouter>
       
       </div>
+      {/**rivedere div da sistemare */}
       <div className="bg-darktheme bottom-0 left-0 right-0 text-center py-2">
         Contatti
       </div>
