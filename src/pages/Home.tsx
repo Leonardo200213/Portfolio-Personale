@@ -7,7 +7,7 @@ export default function Home() {
             <div className="flex justify-center m-5">
                 <img src={foto} className="rounded-3xl w-50 m-5"/>
                 <h1 className="m-5 max-w-sm md:max-w-xl">
-                    Mi sono diplomato presso ITT Meucci nel 2021.
+                    Mi sono diplomato presso ITIS Meucci nel 2021.
                     Sin dall' infanzia una forte passione videoludica e per le nuove tecnologie mi porta avanti. Mi definisco un ragazzo tranquillo e riservato per il lavoro in solitaria ma sempre pronto ad imparare e mettermi in gioco.
                 </h1>
             </div>
