@@ -48,7 +48,11 @@ export default function Hobby() {
             </h1>
             <div className="flex flex-wrap gap-0 items-start">
                 {videogames.map((c, i) => (
-                    <Card key={i} name={c.gameName} variant="gameCard" link={c.link}/>
+                    <Card
+                        key={i}
+                        name={c.gameName}
+                        variant="gameCard"
+                        link={c.link}/>
                 ))}
             </div>
         </div>
