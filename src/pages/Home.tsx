@@ -1,5 +1,5 @@
-import github from "../assets/github.png"
-import foto from "../assets/foto.jpg"
+import github from "../assets/images/github.png"
+import foto from "../assets/images/foto.jpg"
 
 export default function Home() {
     return(

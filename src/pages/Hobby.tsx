@@ -1,36 +1,26 @@
-import witness from "../assets/witness.jpg";
-import knight from "../assets/knight.png";
-import portal from "../assets/portal2.jpg";
-import talos from "../assets/talos2.jpg";
-import jusant from "../assets/jusant.jpg";
+import { images } from "../assets/images";
 import Card from "../components/Card";
-import chess from "../assets/chess.png";
-import esistenza from "../assets/esistenza.png";
-import ombra from "../assets/ombra.png";
-import indiesedano from "../assets/sedano.png"; 
-import indiekick from "../assets/kickstarter.png";
-import classifica from "../assets/classifica.png";
 
 export default function Hobby() {
     {/**sistemare i link */}
     const videogames = [
-        {gameName: witness, link: "https://store.steampowered.com/app/210970/The_Witness/"},
-        {gameName: portal, link: "https://store.steampowered.com/app/620/Portal_2/"},
-        {gameName: talos, link: "https://store.steampowered.com/app/835960/The_Talos_Principle_2/"},
-        {gameName: knight, link: "https://store.steampowered.com/app/835960/The_Talos_Principle_2/"},
-        {gameName: jusant, link: "https://store.steampowered.com/app/835960/The_Talos_Principle_2/"},
+        {gameName: images.witness, link: "https://store.steampowered.com/app/210970/The_Witness/"},
+        {gameName: images.portal, link: "https://store.steampowered.com/app/620/Portal_2/"},
+        {gameName: images.talos, link: "https://store.steampowered.com/app/835960/The_Talos_Principle_2/"},
+        {gameName: images.knight, link: "https://store.steampowered.com/app/835960/The_Talos_Principle_2/"},
+        {gameName: images.jusant, link: "https://store.steampowered.com/app/835960/The_Talos_Principle_2/"},
     ];
 
     const novels = [
-        {novelName: chess},
-        {novelName: esistenza},
-        {novelName: ombra},
+        {novelName: images.chess},
+        {novelName: images.esistenza},
+        {novelName: images.ombra},
     ];
 
     const video = [
-        {videoName: classifica,},
-        {videoName: indiekick},
-        {videoName: indiesedano},
+        {videoName: images.classifica,},
+        {videoName: images.indiekick},
+        {videoName: images.indiesedano},
     ];
 
 
