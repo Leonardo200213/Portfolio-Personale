@@ -30,7 +30,7 @@ export default function Hobby() {
             <h1 className="text-5xl font-bold">
                 Videogiochi
             </h1>
-            <p className="mt-3 ml-3 mr-15 text-justify max-w-sm md:max-w-xl">
+            <p className="mt-3 ml-3 mr-15 text-justify max-w-sm md:max-w-xl text-xl">
                 I videogiochi sono il mio passatempo preferito fin da piccolo. Adoro i titoli di (quasi) ogni genere ma con particolare interesse verso quelli puzzle e gameplay interessanti e avvincenti.
             </p>
             <h1 className="text-3xl font-semibold mt-5">
@@ -51,7 +51,7 @@ export default function Hobby() {
             <h1 className="text-5xl font-bold text-right">
                 Scrittura
             </h1>
-            <p className="mr-3 mt-3 ml-15 text-right max-w-sm md:max-w-xl">
+            <p className="mr-3 mt-3 ml-15 text-right max-w-sm md:max-w-xl text-xl">
                 I videogiochi sono il mio passatempo preferito fin da piccolo. Adoro i titoli di (quasi) ogni genere ma con particolare interesse verso quelli puzzle e gameplay interessanti e avvincenti.
             </p>
             <h1 className="text-3xl font-semibold mt-5">
@@ -68,7 +68,7 @@ export default function Hobby() {
             <h1 className="text-5xl font-bold">
                 Editing video
             </h1>
-            <p className="mt-3 ml-3 mr-15 text-justify max-w-sm md:max-w-xl">
+            <p className="mt-3 ml-3 mr-15 text-justify max-w-sm md:max-w-xl text-xl">
                 I videogiochi sono il mio passatempo preferito fin da piccolo. Adoro i titoli di (quasi) ogni genere ma con particolare interesse verso quelli puzzle e gameplay interessanti e avvincenti.
             </p>
             <h1 className="text-3xl font-semibold mt-5">

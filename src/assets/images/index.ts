@@ -9,7 +9,12 @@ import ombra from "./ombra.png";
 import indiesedano from "./sedano.png"; 
 import indiekick from "./kickstarter.png";
 import classifica from "./classifica.png";
+import github from "./github.png";
+import gitbanner from "./githubBanner.png";
+import foto from "./foto.jpg";
+import linkedin from "./linkedin.png";
 
 export const images = {
-    witness, knight, portal, talos, jusant, chess, esistenza, ombra, indiekick, indiesedano, classifica,
+    witness, knight, portal, talos, jusant, chess, esistenza, ombra, indiekick, indiesedano, classifica, github,
+    gitbanner, foto, linkedin,
 };
