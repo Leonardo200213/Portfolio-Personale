@@ -7,6 +7,8 @@
   --color-darktheme: #2F2F2F;
 }
 
+/*colore sfondo tendente giallo-celeste*/
+
 .nav-link {
   @apply inline-block px-7 py-1 rounded-full border-2 border-transparent;
 }

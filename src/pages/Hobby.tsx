@@ -25,7 +25,7 @@ export default function Hobby() {
 
 
   return (
-    <>
+    <div className="items-center">
         <div className="ml-10 md:ml-45 mt-15 text-left"> {/**border-2 border-dark-brown rounded-4xl p-5 w-350 bg-white*/}
             <h1 className="text-4xl font-bold">
                 Videogiochi
@@ -80,7 +80,7 @@ export default function Hobby() {
                 ))}
             </div>
         </div>
-    </>
+    </div>
   )
 }
 
