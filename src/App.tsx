@@ -15,7 +15,8 @@ function App() {
               <Dark/>
             </div>*/}
 
-            <ul className="flex mx-auto gap-3 mt-6 font-bold text-lg border border-dark-brown bg-white p-2.5 rounded-full w-full md:w-fit shadow-lg select-none">
+            <ul className="flex mx-auto gap-3 mt-6 font-bold text-lg border border-dark-brown bg-white
+              p-2.5 rounded-full w-fit shadow-lg select-none">
               <li>
                 <NavLink
                   to="/home"

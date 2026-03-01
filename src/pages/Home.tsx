@@ -6,49 +6,56 @@ export default function Home() {
 
     const linkPage = [
         {
+            iconImg: images.linkedin,
+            link: "ciao",
+            title: "LinkedIn",
+            subtitle: "Lorem ipsum dolor",
+        },
+        {
+            iconImg: images.linkedin,
+            link: "ciao",
+            title: "Indeed",
+            subtitle: "Lorem ipsum dolor",
+        },
+        {
+            iconImg: images.linkedin,
+            link: "ciao",
+            title: "Curriculum ",
+            subtitle: "Lorem ipsum dolor",
+        },
+        {
             iconImg: images.github,
             link: "https://github.com/Leonardo200213",
             title: "GitHub",
             subtitle: "I miei progetti e idee",
         },
-        {
-            iconImg: images.linkedin,
-            link: "ciao",
-            title: "Linkedin",
-            subtitle: "Lorem ipsum dolor",
-        },
-        {
-            iconImg: images.foto,
-            link: "ciao",
-            title: "Lorem ipsum.",
-            subtitle: "Lorem ipsum dolor",
-        },{
-            iconImg: images.foto,
-            link: "ciao",
-            title: "Lorem ipsum.",
-            subtitle: "Lorem ipsum dolor",
-        },
     ];
 
     return(
         <>
-            <div className="flex justify-center m-5">
-                <img src={foto} className="rounded-3xl w-50 m-5 shadow-xl"/>
-                <h1 className="m-5 max-w-sm md:max-w-xl text-xl">
-                    Mi sono diplomato presso ITIS Meucci nel 2021.
-                    Sin dall' infanzia una forte passione videoludica e per le nuove tecnologie mi porta avanti. Mi definisco un ragazzo tranquillo e riservato per il lavoro in solitaria ma sempre pronto ad imparare e mettermi in gioco.
-                </h1>
+            <div className="max-w-4xl mx-auto mt-15">
+                <h1 className="text-4xl font-bold ml-10 md:ml-0">Chi sono</h1>
+                <div className="flex flex-col justify-center items-center md:flex-row md:items-start">
+                    <img src={foto} className="rounded-3xl w-50 m-5 shadow-xl"/>
+                    <h1 className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl">
+                        Mi sono diplomato presso ITIS Meucci nel 2021.
+                        Sin dall' infanzia una forte passione videoludica e per le nuove tecnologie mi porta avanti. Mi definisco un ragazzo tranquillo e riservato per il lavoro in solitaria ma sempre pronto ad imparare e mettermi in gioco.
+                    </h1>
+                </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto w-full px-4">
-                {linkPage.map((c, i) => (
-                    <CardLink
-                        key={i}
-                        icon={c.iconImg}
-                        link={c.link}
-                        title={c.title}
-                        subtitle={c.subtitle}
-                        />
-                ))}
+            <div className="max-w-4xl mx-auto">
+                <h1 className="text-4xl font-bold py-5 ml-10 md:ml-0">Contatti</h1>
+                <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto w-full px-4 mb-20">
+                    {linkPage.map((c, i) => (
+                        <CardLink
+                            key={i}
+                            icon={c.iconImg}
+                            link={c.link}
+                            title={c.title}
+                            subtitle={c.subtitle}
+                            />
+                    ))}
+                </div>
             </div>
         </>
     )

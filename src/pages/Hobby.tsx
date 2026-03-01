@@ -27,7 +27,7 @@ export default function Hobby() {
   return (
     <>
         <div className="ml-10 md:ml-45 mt-15 text-left"> {/**border-2 border-dark-brown rounded-4xl p-5 w-350 bg-white*/}
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-4xl font-bold">
                 Videogiochi
             </h1>
             <p className="mt-3 ml-3 mr-15 text-justify max-w-sm md:max-w-xl text-xl">
@@ -48,7 +48,7 @@ export default function Hobby() {
         </div>
 
         <div className="md:mr-45 mt-15 flex flex-col items-end">
-            <h1 className="text-5xl font-bold text-right">
+            <h1 className="text-4xl font-bold text-right">
                 Scrittura
             </h1>
             <p className="mr-3 mt-3 ml-15 text-right max-w-sm md:max-w-xl text-xl">
@@ -65,7 +65,7 @@ export default function Hobby() {
         </div>
 
         <div className="ml-10 md:ml-45 mt-15 text-left"> {/**border-2 border-dark-brown rounded-4xl p-5 w-350 bg-white*/}
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-4xl font-bold">
                 Editing video
             </h1>
             <p className="mt-3 ml-3 mr-15 text-justify max-w-sm md:max-w-xl text-xl">
