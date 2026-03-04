@@ -1,6 +1,7 @@
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom"
 import Hobby from "./pages/Hobby.tsx"
 import Home from "./pages/Home.tsx"
+import Lavoro from "./pages/Lavoro.tsx"
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             {/**collegamenti alle pagine */}
             <Route path="/hobby" element={<Hobby />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/work" element={<Lavoro />} />
           </Routes>
         </BrowserRouter>
       
