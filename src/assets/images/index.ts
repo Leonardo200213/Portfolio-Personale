@@ -13,8 +13,9 @@ import github from "./github.png";
 import gitbanner from "./githubBanner.png";
 import foto from "./foto.jpg";
 import linkedin from "./linkedin.png";
+import esaote from "./esaoteLogo.png";
 
 export const images = {
     witness, knight, portal, talos, jusant, chess, esistenza, ombra, indiekick, indiesedano, classifica, github,
-    gitbanner, foto, linkedin,
+    gitbanner, foto, linkedin, esaote,
 };
