@@ -18,7 +18,7 @@ export default function Home() {
             subtitle: "Lorem ipsum dolor",
         },
         {
-            iconImg: images.linkedin,
+            iconImg: images.pdf,
             link: "ciao",
             title: "Curriculum ",
             subtitle: "Lorem ipsum dolor",
@@ -37,9 +37,15 @@ export default function Home() {
                 <h1 className="text-4xl font-bold ml-10 md:ml-0">Chi sono</h1>
                 <div className="flex flex-col justify-center items-center md:flex-row md:items-start">
                     <img src={foto} className="rounded-3xl w-50 m-5 shadow-xl"/>
-                    <h1 className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl">
-                        Mi sono diplomato presso ITIS Meucci nel 2021.
-                        Sin dall' infanzia una forte passione videoludica e per le nuove tecnologie mi porta avanti. Mi definisco un ragazzo tranquillo e riservato per il lavoro in solitaria ma sempre pronto ad imparare e mettermi in gioco.
+                    <h1 className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl text-justify">
+                        Mi chiamo Leonardo Messeri, sono una persona curiosa e creativa, pronto a imparare cose nuove che mi coinvolgono con entusiasmo e attenzione ai dettagli.
+                        Sin dall'infanzia nutro una forte passione per l'ambito tecnologico e videoludico che mi hanno spinto a studiare informatica presso l'istituto ITIS Meucci, diplomandomi nel 2021 come Perito Informatico.
+                        Dopo la scuola ho ampliato i miei interessi in altri ambiti creativi come la scrittura, il disegno e la produzione di video su Youtube che mi hanno aiutato a sviluppare
+                        immaginazione, precisione e capacità di esprimermi al meglio.
+                        Ho iniziato a lavorare immediatamente dopo il diploma, desideroso di immergermi nel mondo del lavoro alla ricerca del percorso giusto per me. Attualmente lavoro presso Esaote come operaio metalmeccanico,
+                        ma continuo a esplorare opportunità nel mio campo di studi, con particolare interesse per lo sviluppo front-end.
+                        
+                        Mi definisco un ragazzo tranquillo e riservato per il lavoro in solitaria ma sempre pronto ad imparare e mettermi in gioco.
                     </h1>
                 </div>
             </div>

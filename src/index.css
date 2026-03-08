@@ -8,9 +8,9 @@
 }
 
 /*colore sfondo tendente giallo-celeste*/
-
+/*inserire .valink su app con tailwind*/
 .nav-link {
-  @apply inline-block px-7 py-1 rounded-full border-2 border-transparent;
+  @apply inline-block px-4 py-0.5 md:px-7 md:py-1 rounded-full border-2 border-transparent;
 }
 
 .nav-link.active {

@@ -11,7 +11,7 @@ export default function Lavoro(){
                         <img src={images.esaote} className="w-120"/>
                     </h1>
                 </div>
-                    <h1>
+                    <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
                         Lavoro presso esote dove ho imparato il lavoro manuale ...
                     </h1>
                     <h1>

@@ -5,6 +5,7 @@ import Lavoro from "./pages/Lavoro.tsx"
 
 import { useState, useEffect } from 'react';
 import OfflinePage from './pages/Offline.tsx';
+import Contatti from "./pages/Contatti.tsx";
 
 function App() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -31,6 +32,7 @@ function App() {
           <div className="flex flex-col min-h-screen">
             <div className="flex-1">
               <BrowserRouter>
+              
                 <div className="relative">
                   {/*
                   reimportare dark, momentaneamente rimosso per spazio
@@ -38,13 +40,15 @@ function App() {
                     <Dark/>
                   </div>*/}
 
-
-                  {/**aggiungere pagina contatti */}
-                  <ul className="flex mx-auto gap-3 mt-6 font-bold text-lg border border-dark-brown bg-white
-                    p-2.5 rounded-full w-fit shadow-lg select-none">
+                  <ul className="flex mx-auto gap-2.5 md:gap-3
+                    font-bold text-md md:text-lg
+                    border border-dark-brown bg-white
+                    p-2.5 mt-6
+                    rounded-full w-full md:w-fit shadow-lg select-none
+                    justify-center">
                     <li>
                       <NavLink
-                        to="/home"
+                        to="/"
                         className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                       >
                         Home
@@ -66,23 +70,27 @@ function App() {
                         Hobby
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink
+                        to="/contatti"
+                        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                      >
+                        Contatti
+                      </NavLink>
+                    </li>
                   </ul>
                 </div>
 
                 <Routes>
                   {/**collegamenti alle pagine */}
                   <Route path="/hobby" element={<Hobby />} />
-                  <Route path="/home" element={<Home />} />
+                  <Route path="/" element={<Home />} />
                   <Route path="/work" element={<Lavoro />} />
+                  <Route path="/contatti" element={<Contatti />} />
                 </Routes>
               </BrowserRouter>
             
             </div>
-            {/**rivedere div da sistemare
-            <div className="bg-darktheme w-full">
-              Contatti
-            </div>
-            */}
           </div>
         </div>
       ) : (
