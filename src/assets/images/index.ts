@@ -15,8 +15,9 @@ import foto from "./foto.jpg";
 import linkedin from "./linkedin.png";
 import esaote from "./esaoteLogo.png";
 import pdf from "./tl.png";
+import rgis from "./rgis.png";
 
 export const images = {
     witness, knight, portal, talos, jusant, chess, esistenza, ombra, indiekick, indiesedano, classifica, github,
-    gitbanner, foto, linkedin, esaote, pdf,
+    gitbanner, foto, linkedin, esaote, pdf, rgis,
 };
