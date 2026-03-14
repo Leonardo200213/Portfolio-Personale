@@ -6,59 +6,97 @@ export default function Home() {
 
     const linkPage = [
         {
-            iconImg: images.linkedin,
-            link: "ciao",
-            title: "LinkedIn",
-            subtitle: "Lorem ipsum dolor",
-        },
-        {
-            iconImg: images.linkedin,
-            link: "ciao",
-            title: "Indeed",
-            subtitle: "Lorem ipsum dolor",
-        },
-        {
             iconImg: images.pdf,
             link: "ciao",
             title: "Curriculum ",
-            subtitle: "Lorem ipsum dolor",
+            subtitle: "Scarica il mio CV",
         },
         {
             iconImg: images.github,
             link: "https://github.com/Leonardo200213",
             title: "GitHub",
-            subtitle: "I miei progetti e idee",
+            subtitle: "I miei progetti in sviluppo",
+        },
+        {
+            iconImg: images.linkedin,
+            link: "ciao",
+            title: "LinkedIn",
+            subtitle: "Profilo professionale e percorso lavorativo",
+        },
+    ];
+
+        const linkContact= [
+        {
+            iconImg: images.pdf,
+            link: "ciao",
+            title: "Email",
+            subtitle: "",
+        },
+        {
+            iconImg: images.linkedin,
+            link: "ciao",
+            title: "Telefono",
+            subtitle: "",
         },
     ];
 
     return(
         <>
             <div className="max-w-4xl mx-auto mt-15">
-                <h1 className="text-4xl font-bold ml-10 md:ml-0">Chi sono</h1>
-                <div className="flex flex-col justify-center items-center md:flex-row md:items-start">
-                    <img src={foto} className="rounded-3xl w-50 m-5 shadow-xl"/>
-                    <h1 className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl text-justify">
-                        Mi chiamo Leonardo Messeri, sono una persona curiosa e creativa, pronto a imparare cose nuove che mi coinvolgono con entusiasmo e attenzione ai dettagli.
-                        Sin dall'infanzia nutro una forte passione per l'ambito tecnologico e videoludico che mi hanno spinto a studiare informatica presso l'istituto ITIS Meucci, diplomandomi nel 2021 come Perito Informatico.
+                <h1 className="text-4xl font-bold ml-15 md:ml-0">Chi sono</h1>
+                <div className="flex flex-col justify-center items-center md:flex-row md:items-center">
+                    <img src={foto} className="rounded-3xl w-65 m-3 shadow-xl "/>
+                    <div className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl text-justify space-y-8">
+                        <p>
+                        Mi chiamo <b>Leonardo Messeri</b>, sono una persona curiosa e creativa e attento ai dettagli.
+                        Sin dall'infanzia nutro forte passione verso l'ambito tecnologico e videoludico che mi hanno spinto a studiare informatica presso l'istituto ITIS Meucci (2021), diplomandomi come Perito Informatico.
+                        </p>
+
+                        <p>
                         Dopo la scuola ho ampliato i miei interessi in altri ambiti creativi come la scrittura, il disegno e la produzione di video su Youtube che mi hanno aiutato a sviluppare
                         immaginazione, precisione e capacità di esprimermi al meglio.
-                        Ho iniziato a lavorare immediatamente dopo il diploma, desideroso di immergermi nel mondo del lavoro alla ricerca del percorso giusto per me. Attualmente lavoro presso Esaote come operaio metalmeccanico,
-                        ma continuo a esplorare opportunità nel mio campo di studi, con particolare interesse per lo sviluppo front-end.
-                        
-                        Mi definisco un ragazzo tranquillo e riservato per il lavoro in solitaria ma sempre pronto ad imparare e mettermi in gioco.
-                    </h1>
+                        </p>
+
+                        <p>
+                        Ho iniziato a lavorare desideroso di immergermi nel mondo del lavoro alla ricerca del percorso adatto a me. Attualmente lavoro presso Esaote come operaio metalmeccanico
+                        ma continuo a esplorare opportunità nel mio campo di studi, con particolare interesse per lo <b>sviluppo front-end</b>.                        
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold py-5 ml-10 md:ml-0">Contatti</h1>
+            <div className="max-w-4xl mx-auto mt-20">
                 <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto w-full px-4 mb-20">
                     {linkPage.map((c, i) => (
-                        <CardLink
+                        <div
                             key={i}
-                            icon={c.iconImg}
-                            link={c.link}
-                            title={c.title}
-                            subtitle={c.subtitle}
+                            className={i === linkPage.length - 1 ? "md:col-span-2 justify-self-center max-w-[422px]" : ""}
+                        >
+                            <CardLink
+                                key={i}
+                                icon={c.iconImg}
+                                link={c.link}
+                                title={c.title}
+                                subtitle={c.subtitle}
+                                size="normal"
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/*contatti */}
+            <div className="max-w-4xl mx-auto mt-20">
+                <h1 className="text-4xl font-bold ml-15 md:ml-0">Contatti</h1>
+                <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto w-full px-4 my-12">
+                    {linkContact.map((c, i) => (
+                        
+                            <CardLink
+                                key={i}
+                                icon={c.iconImg}
+                                link={c.link}
+                                title={c.title}
+                                subtitle={c.subtitle}
+                                size="small"
                             />
                     ))}
                 </div>

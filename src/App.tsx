@@ -5,7 +5,6 @@ import Lavoro from "./pages/Lavoro.tsx"
 
 import { useState, useEffect } from 'react';
 import OfflinePage from './pages/Offline.tsx';
-import Contatti from "./pages/Contatti.tsx";
 
 function App() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -70,14 +69,6 @@ function App() {
                         Hobby
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink
-                        to="/contatti"
-                        className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
-                      >
-                        Contatti
-                      </NavLink>
-                    </li>
                   </ul>
                 </div>
 
@@ -86,7 +77,6 @@ function App() {
                   <Route path="/hobby" element={<Hobby />} />
                   <Route path="/" element={<Home />} />
                   <Route path="/work" element={<Lavoro />} />
-                  <Route path="/contatti" element={<Contatti />} />
                 </Routes>
               </BrowserRouter>
             
