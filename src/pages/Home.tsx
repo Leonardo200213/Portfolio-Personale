@@ -65,7 +65,7 @@ export default function Home() {
             <p>
               Ho iniziato a lavorare desideroso di immergermi nel mondo del
               lavoro alla ricerca del percorso adatto a me. Attualmente lavoro
-              presso Esaote come operaio metalmeccanico ma continuo a esplorare
+              presso Esaote come operaio metalmeccanico, ma continuo a esplorare
               opportunità nel mio campo di studi, con particolare interesse per
               lo <b>sviluppo front-end</b>.
             </p>
