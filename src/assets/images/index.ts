@@ -6,7 +6,7 @@ import jusant from "./jusant.jpg";
 import chess from "./chess.png";
 import esistenza from "./esistenza.png";
 import ombra from "./ombra.png";
-import indiesedano from "./sedano.png"; 
+import indiesedano from "./sedano.png";
 import indiekick from "./kickstarter.png";
 import classifica from "./classifica.png";
 import github from "./github.png";
@@ -16,8 +16,28 @@ import linkedin from "./linkedin.png";
 import esaote from "./esaoteLogo.png";
 import pdf from "./tl.png";
 import rgis from "./rgis.png";
+import phone from "./phone.png";
+import email from "./email.png";
 
 export const images = {
-    witness, knight, portal, talos, jusant, chess, esistenza, ombra, indiekick, indiesedano, classifica, github,
-    gitbanner, foto, linkedin, esaote, pdf, rgis,
+  witness,
+  knight,
+  portal,
+  talos,
+  jusant,
+  chess,
+  esistenza,
+  ombra,
+  indiekick,
+  indiesedano,
+  classifica,
+  github,
+  gitbanner,
+  foto,
+  linkedin,
+  esaote,
+  pdf,
+  rgis,
+  phone,
+  email,
 };
