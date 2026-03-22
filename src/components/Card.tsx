@@ -11,7 +11,7 @@ export default function Card({ name, variant, link }: CardProps) {
     bookCard:
       "transition transform duration-200 ease-in-out cursor-pointer hover:scale-105 m-1 mt-3 w-40 h-50 border-1 border-black bg-white h-35 md:w-54 md:h-64 md:m-3 rounded-lg block hover:shadow-xl",
     videoCard:
-      "transition transform duration-200 ease-in-out cursor-pointer hover:scale-105 m-3 w-60 h-35 md:w-58 md:h-38 md:m-3 block hover:shadow-2xl shadow-black/80",
+      "transition transform duration-200 ease-in-out cursor-pointer hover:scale-105 m-3 w-60 h-35 md:w-60 md:m-3 block hover:shadow-2xl shadow-black/80",
   };
 
   return (
