@@ -9,6 +9,8 @@ export default function Lavoro() {
     { title: "React", hour: 7, year: 2025 },
     { title: "Python", hour: 4, year: 2024 },
     { title: "Tech Camp Gaming", hour: 6, year: 2024 },
+    { title: "Metodologia 5S e team building", hour: 6, year: 2023 },
+    { title: "PCTO Samsung Let's App", hour: 6, year: 2020 },
   ];
 
   return (
@@ -36,9 +38,9 @@ export default function Lavoro() {
           />
         </div>
 
-        <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-15">Corsi</h1>
+        <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Corsi</h1>
 
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center gap-5 my-10 text-center">
           {courses.map((courses, i) => (
             <CardCourse
               key={i}
@@ -47,40 +49,6 @@ export default function Lavoro() {
               year={courses.year}
             />
           ))}
-        </div>
-      </div>
-
-      <div className="max-w-4xl mx-auto mt-15">
-        <h1 className="text-4xl font-bold ml-10 md:ml-0">Corsi</h1>
-        <div className="justify-center ">
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            Typescript 4 ore
-          </h1>
-          <h1>2025</h1>
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            Tailwind 5 ore
-          </h1>
-          <h1>2025</h1>
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            React 7 ore
-          </h1>
-          <h1>2025</h1>
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            Python 4 ore
-          </h1>
-          <h1>2024</h1>
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            Tech camp gaming 6 ore
-          </h1>
-          <h1>2024</h1>
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            Metodologia 5S e team building
-          </h1>
-          <h1>2023</h1>
-          <h1 className="m-5 ml-13 md:ml-5 mr-15 max-w-sm md:max-w-5xl text-xl">
-            PCTO Samsung Let's App 4 ore
-          </h1>
-          <h1>2020</h1>
         </div>
       </div>
     </>

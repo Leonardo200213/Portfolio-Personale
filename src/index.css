@@ -1,16 +1,16 @@
 @import "tailwindcss";
 @theme {
-  --color-pastel-beige: #F7F3EE;
-  --color-dark-beige: #25221E;
-  --color-dark-yellow: #AD7A13;
-  --color-dark-brown: #8B5E3C;
-  --color-darktheme: #2F2F2F;
+  --color-pastel-beige: #f7f3ee;
+  --color-dark-beige: #25221e;
+  --color-dark-yellow: #ad7a13;
+  --color-dark-brown: #8b5e3c;
+  --color-darktheme: #2f2f2f;
 }
 
 /*colore sfondo tendente giallo-celeste*/
 /*inserire .valink su app con tailwind*/
 .nav-link {
-  @apply inline-block px-4 py-0.5 md:px-7 md:py-1 rounded-full border-2 border-transparent;
+  @apply inline-block px-5 py-1 md:px-7 md:py-1 rounded-full border-2 border-transparent;
 }
 
 .nav-link.active {
@@ -19,16 +19,32 @@
 }
 
 @keyframes bounceText {
-  0% { transform: scale(1);}
-  50% { transform: scale(1.1);}
-  100% { transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-html, body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+html,
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
-
-
 
 /* :root {
 transition-transform duration-300 scale-105

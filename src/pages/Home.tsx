@@ -45,7 +45,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto mt-15">
         <h1 className="text-4xl font-bold ml-10 md:ml-0">Chi sono</h1>
         <div className="flex flex-col justify-center items-center md:flex-row md:items-center">
-          <img src={foto} className="rounded-3xl w-65 m-3 shadow-xl " />
+          <img src={foto} className="rounded-3xl w-65 my-10 shadow-xl " />
           <div className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl text-justify space-y-8">
             <p>
               Mi chiamo <b>Leonardo Messeri</b>, sono una persona curiosa e

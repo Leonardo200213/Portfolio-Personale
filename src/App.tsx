@@ -38,7 +38,7 @@ function App() {
 
                   <ul
                     className="flex mx-auto gap-2.5 md:gap-3
-                    font-bold text-md md:text-lg
+                    font-bold text-lg md:text-lg
                     border border-dark-brown bg-white
                     p-2.5 mt-6
                     rounded-full w-fit shadow-lg select-none
