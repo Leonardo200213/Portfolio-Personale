@@ -101,7 +101,7 @@ export default function Home() {
       {/*contatti */}
       <div className="max-w-4xl mx-auto mt-20">
         <h1 className="text-4xl font-bold ml-15 md:ml-0">Contatti</h1>
-        <div className="grid md:grid-cols-2 gap-5 w-full px-4 my-8 mb-15">
+        <div className="grid md:grid-cols-2 gap-5 w-full px-4 mt-8">
           {linkContact.map((c, i) => (
             <CardLink
               key={i}

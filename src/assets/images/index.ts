@@ -18,6 +18,7 @@ import pdf from "./tl.png";
 import rgis from "./rgis.png";
 import phone from "./phone.png";
 import email from "./email.png";
+import layton from "./layton.png";
 
 export const images = {
   witness,
@@ -40,4 +41,5 @@ export const images = {
   rgis,
   phone,
   email,
+  layton,
 };

@@ -18,7 +18,7 @@ export default function Lavoro() {
       <div className="max-w-4xl mx-auto mt-15">
         <h1 className="text-4xl font-bold ml-10 md:ml-0">Lavoro</h1>
 
-        <div className="my-10">
+        <div className="my-8">
           <CardWork
             logo={images.esaote}
             company="Esaote"
@@ -28,7 +28,7 @@ export default function Lavoro() {
           />
         </div>
 
-        <div className="my-10">
+        <div className="my-8">
           <CardWork
             logo={images.rgis}
             company="RGIS"
@@ -40,7 +40,7 @@ export default function Lavoro() {
 
         <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Corsi</h1>
 
-        <div className="flex flex-wrap justify-center gap-5 my-10 text-center">
+        <div className="flex flex-wrap justify-center gap-5 mt-8 text-center">
           {courses.map((courses, i) => (
             <CardCourse
               key={i}

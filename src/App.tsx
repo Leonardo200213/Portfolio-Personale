@@ -23,74 +23,83 @@ function App() {
   }, []);
 
   return (
-    <div>
-      {isOnline ? (
-        <div>
-          <div className="flex flex-col min-h-screen">
-            <div className="flex-1">
-              <BrowserRouter>
-                <div className="relative">
-                  {/*
+    <>
+      <div>
+        {isOnline ? (
+          <div>
+            <div className="flex flex-col min-h-screen">
+              <div className="flex-1">
+                <BrowserRouter>
+                  <div className="relative">
+                    {/*
                   reimportare dark, momentaneamente rimosso per spazio
                   <div className="absolute top-5 right-15">
                     <Dark/>
                   </div>*/}
 
-                  <ul
-                    className="flex mx-auto gap-2.5 md:gap-3
-                    font-bold text-lg md:text-lg
+                    <ul
+                      className="flex mx-auto gap-2.5 md:gap-3
+                    font-bold text-lg md:text-xl
                     border border-dark-brown bg-white
                     p-2.5 mt-6
                     rounded-full w-fit shadow-lg select-none
                     justify-center"
-                  >
-                    <li>
-                      <NavLink
-                        to="/"
-                        className={({ isActive }) =>
-                          isActive ? "nav-link active" : "nav-link"
-                        }
-                      >
-                        Home
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/work"
-                        className={({ isActive }) =>
-                          isActive ? "nav-link active" : "nav-link"
-                        }
-                      >
-                        Lavoro
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/hobby"
-                        className={({ isActive }) =>
-                          isActive ? "nav-link active" : "nav-link"
-                        }
-                      >
-                        Hobby
-                      </NavLink>
-                    </li>
-                  </ul>
-                </div>
+                    >
+                      <li>
+                        <NavLink
+                          to="/"
+                          className={({ isActive }) =>
+                            isActive ? "nav-link active" : "nav-link"
+                          }
+                        >
+                          Home
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/work"
+                          className={({ isActive }) =>
+                            isActive ? "nav-link active" : "nav-link"
+                          }
+                        >
+                          Lavoro
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/hobby"
+                          className={({ isActive }) =>
+                            isActive ? "nav-link active" : "nav-link"
+                          }
+                        >
+                          Hobby
+                        </NavLink>
+                      </li>
+                    </ul>
 
-                <Routes>
-                  {/**collegamenti alle pagine */}
-                  <Route path="/" element={<Home />} />
-                  <Route path="/work" element={<Lavoro />} />
-                  <Route path="/hobby" element={<Hobby />} />
-                </Routes>
-              </BrowserRouter>
+                    <p className="text-center mt-5 text-sm text-gray-500">
+                      Creato da Leonardo Messeri
+                    </p>
+                  </div>
+
+                  <Routes>
+                    {/**collegamenti alle pagine */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/work" element={<Lavoro />} />
+                    <Route path="/hobby" element={<Hobby />} />
+                  </Routes>
+                </BrowserRouter>
+              </div>
             </div>
           </div>
-        </div>
-      ) : (
-        <OfflinePage />
-      )}
-    </div>
+        ) : (
+          <OfflinePage />
+        )}
+      </div>
+      <footer className="text-center text-sm md:text-xs text-gray-500 mt-20 mb-5">
+        by Leonardo Messeri • ©2026 • v1.0
+      </footer>
+    </>
   );
 }
 

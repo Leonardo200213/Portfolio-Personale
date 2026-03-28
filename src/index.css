@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @theme {
-  --color-pastel-beige: #f7f3ee;
+  --color-pastel-beige: #f3f4f6;
   --color-dark-beige: #25221e;
   --color-dark-yellow: #ad7a13;
   --color-dark-brown: #8b5e3c;
@@ -18,6 +18,19 @@
   animation: bounceText 0.3s ease-in-out;
 }
 
+html,
+body {
+  @apply bg-gradient-to-b from-[#fcfaf8] via-[#f3e9dd] to-[#fcefe1];
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*
+dark mode
+<div className="min-h-screen 
+  bg-gradient-to-b from-[#f7f3ee] to-[#efe2d3]
+  dark:from-[#0f172a] dark:to-[#020617]
+">*/
+
 @keyframes bounceText {
   0% {
     transform: scale(1);
@@ -32,37 +45,5 @@
 
 html,
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue",
-    sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-/* :root {
-transition-transform duration-300 scale-105
-
-.nav-link {
-  @apply inline-block px-5 py-1 rounded-full border-2 border-transparent text-gray-600 bg-gray-400;
-}
-
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
