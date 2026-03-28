@@ -77,7 +77,7 @@ function App() {
                       </li>
                     </ul>
 
-                    <p className="text-center mt-5 text-sm text-gray-500">
+                    <p className="text-center mt-3.5 text-sm text-gray-500">
                       Creato da Leonardo Messeri
                     </p>
                   </div>
