@@ -97,7 +97,7 @@ function App() {
         )}
       </div>
       <footer className="text-center text-sm md:text-xs text-gray-500 mt-20 mb-5">
-        by Leonardo Messeri • ©2026 • v1.0
+        by Leonardo Messeri • ©2026 • v1.1
       </footer>
     </>
   );

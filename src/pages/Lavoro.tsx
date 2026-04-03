@@ -25,6 +25,7 @@ export default function Lavoro() {
             role="Operaio metalmeccanico"
             period="Dal 22/04/2022"
             description="Assemblaggio di sonde biomedicali"
+            link="https://www.esaote.com/it-IT/"
           />
         </div>
 
@@ -35,6 +36,7 @@ export default function Lavoro() {
             role="Inventarista"
             period="Dal 04/10/2021 a 28/10/2022"
             description="Addetto al conteggio di prodotti per inventario"
+            link="https://www.rgis.it"
           />
         </div>
 
