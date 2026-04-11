@@ -1,6 +1,7 @@
 import { images } from "../assets/images";
 import CardWork from "../components/CardWork";
 import CardCourse from "../components/CardCourse";
+import GithubAPI from "../components/GithubAPI";
 
 export default function Lavoro() {
   const courses = [
@@ -40,8 +41,10 @@ export default function Lavoro() {
           />
         </div>
 
-        <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Corsi</h1>
+        <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Progetti</h1>
+        <GithubAPI />
 
+        <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Corsi</h1>
         <div className="flex flex-wrap justify-center gap-5 mt-8 text-center">
           {courses.map((courses, i) => (
             <CardCourse
