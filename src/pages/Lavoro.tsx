@@ -42,7 +42,9 @@ export default function Lavoro() {
         </div>
 
         <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Progetti</h1>
-        <GithubAPI />
+        <div className="flex flex-wrap justify-center gap-5 mt-8 text-center">
+          <GithubAPI />
+        </div>
 
         <h1 className="text-4xl font-bold ml-10 md:ml-0 mt-20">Corsi</h1>
         <div className="flex flex-wrap justify-center gap-5 mt-8 text-center">

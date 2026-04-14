@@ -27,17 +27,18 @@ export default function GithubAPI() {
   }, []); //solo una volta all'aggiornamento del componente
 
   return (
-    <div>
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(384px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(384px,1fr))] gap-5 md:max-w-4xl">
       {projects.map((project) => (
         <a
           key={project.id}
           href={project.html_url}
-          className="flex flex-col bg-white rounded-3xl justify-center items-center h-30 m-5"
+          className="flex flex-col w-full bg-white rounded-3xl justify-center items-center h-30
+          shadow-2xl p-5 transition transform duration-200 ease-in-out cursor-pointer hover:scale-103"
         >
-          <h1 className="font-bold">{project.name}</h1>
-          <p>{project.description}</p>
+          <h1 className="font-semibold text-xl">{project.name}</h1>
+          <p className="text-lg">{project.description}</p>
           <div>
-            <span>
+            <span className="text-md">
               <FontAwesomeIcon icon={faFileCode} />
               {project.language}
             </span>
