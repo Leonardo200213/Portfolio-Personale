@@ -96,8 +96,14 @@ function App() {
           <OfflinePage />
         )}
       </div>
-      <footer className="text-center text-sm md:text-xs text-gray-500 mt-20 mb-5">
-        by Leonardo Messeri • ©2026 • v1.2
+      <div className="mt-15 pt-15 bg-linear-to-t from-gray-600 to-transparent"></div>
+      <footer className="text-white text-center text-sm md:text-xs py-1.5 bg-gray-600">
+        <p>by Leonardo Messeri • ©2026 • v1.3</p>
+        <div className="mt-1.5">
+          <span className="cursor-pointer hover:font-bold transition hover:text-amber-600">
+            Changelog
+          </span>
+        </div>
       </footer>
     </>
   );
