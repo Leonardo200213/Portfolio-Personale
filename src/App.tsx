@@ -2,12 +2,14 @@ import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import Hobby from "./pages/Hobby.tsx";
 import Home from "./pages/Home.tsx";
 import Lavoro from "./pages/Lavoro.tsx";
+import Changelog from "./components/Changelog.tsx";
 
 import { useState, useEffect } from "react";
 import OfflinePage from "./pages/Offline.tsx";
 
 function App() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleOnline = () => setIsOnline(true);
@@ -96,14 +98,18 @@ function App() {
           <OfflinePage />
         )}
       </div>
-      <div className="mt-15 pt-15 bg-linear-to-t from-gray-600 to-transparent"></div>
-      <footer className="text-white text-center text-sm md:text-xs py-1.5 bg-gray-600">
+      <footer className="text-white text-center text-sm md:text-xs py-1.5 mt-20 bg-gray-800">
         <p>by Leonardo Messeri • ©2026 • v1.3</p>
         <div className="mt-1.5">
-          <span className="cursor-pointer hover:font-bold transition hover:text-amber-600">
+          <span
+            onClick={() => setOpen(true)}
+            className="cursor-pointer hover:font-bold transition hover:text-amber-600"
+          >
             Changelog
           </span>
         </div>
+        <Changelog open={open} onClose={() => setOpen(false)} />
+        {/**all-inizio della pagina è false, appena preso il pulsante sopra diventa true */}
       </footer>
     </>
   );
