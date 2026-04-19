@@ -26,13 +26,18 @@ interface ChangelogProps {
 }
 
 export default function Changelog({ open, onClose }: ChangelogProps) {
-  if (!open) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-end">
-      <div className="w-full h-[95vh] bg-gray-800 text-white animate-slideUp overflow-auto">
+    <div
+      className={`fixed inset-0 z-50 flex items-end ${open ? "" : "translate-y-full"} transition-transform duration-500 ease-out`}
+    >
+      {/** quando open è vero e quindi aperto non aggiunge niente e attiva l'animazione, quando è disattivato aggiunge translate-y-full*/}
+      <div className="w-full h-[95vh] bg-gray-800 text-white">
         <div className="flex items-center p-10">
-          <button onClick={onClose}>
-            <FontAwesomeIcon icon={faXmark} size="3x" />
+          <button
+            className="cursor-pointer hover:rotate-90 transition-transform ease-in-out"
+            onClick={onClose}
+          >
+            <FontAwesomeIcon icon={faXmark} className="text-3xl md:text-4xl" />
           </button>
           <h2 className="flex-1 text-center font-bold text-4xl">Changelog</h2>
         </div>
