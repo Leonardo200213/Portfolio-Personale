@@ -28,7 +28,7 @@ interface ChangelogProps {
 export default function Changelog({ open, onClose }: ChangelogProps) {
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-end ${open ? "" : "translate-y-full"} transition-transform duration-500 ease-out`}
+      className={`fixed inset-0 z-50 flex items-end ${open ? "" : "translate-y-full"} transition-transform duration-800 ease-in-out`}
     >
       {/** quando open è vero e quindi aperto non aggiunge niente e attiva l'animazione, quando è disattivato aggiunge translate-y-full*/}
       <div className="w-full h-[95vh] bg-gray-800 text-white">
@@ -42,15 +42,24 @@ export default function Changelog({ open, onClose }: ChangelogProps) {
           <h2 className="flex-1 text-center font-bold text-4xl">Changelog</h2>
         </div>
 
-        <div className="p-10 text-lg text-left max-w-2xl mx-auto">
-          {changelogEntries.map((entry) => (
-            <div key={entry.version} className="mt-8">
-              <p className="text-2xl font-semibold mb-2">
+        <div
+          className={`px-15 text-lg text-left max-w-2xl mx-auto transition-opacity duration-500 ${open ? "opacity-100 delay-500" : "opacity-0"}`}
+        >
+          {changelogEntries.map((entry, index) => (
+            <div
+              key={entry.version}
+              className={`${index === 0 ? "mb-15" : "mb-8"}`}
+            >
+              <p
+                className={`${index === 0 ? "text-3xl underline" : "text-2xl"} font-semibold mb-2`}
+              >
                 Versione {entry.version}
               </p>
               <ul className="ml-5 list-disc list-inside">
                 {entry.notes.map((note) => (
-                  <li key={note}>{note}</li>
+                  <li key={note} className={`${index === 0 ? "text-xl" : ""}`}>
+                    {note}
+                  </li>
                 ))}
               </ul>
             </div>

@@ -103,7 +103,7 @@ function App() {
         <div className="mt-1.5">
           <span
             onClick={() => setOpen(true)}
-            className="cursor-pointer hover:font-bold transition hover:text-amber-600"
+            className="cursor-pointer hover:font-bold hover:text-dark-yellow transition duration-500"
           >
             Changelog
           </span>
