@@ -32,11 +32,11 @@ export default function Hobby() {
   const novels = [
     {
       novelName: images.chess,
-      link: "https://docs.google.com/document/d/17CDkIykcMHorC6Cuc4uqXy_llkC3z2m-e5EN9nc5Owk/edit?usp=sharing",
+      link: "https://docs.google.com/document/d/1S_r2fou256kQoNOuJrQH1vcBfVc6kcFtys1-RJq3ncw/edit?usp=sharing",
     },
     {
       novelName: images.esistenza,
-      link: "https://docs.google.com/document/d/17wnPiFVrcAQ9GksPjU7_PJUPK58jZq8cL0yRbosQNe0/edit?usp=drive_link",
+      link: "https://docs.google.com/document/d/1vJcMA3NVFOc4xCpF158aMTspS2xQitl7H6l6HMIaDd8/edit?usp=sharing",
     },
     {
       novelName: images.ombra,
