@@ -1,5 +1,6 @@
 import { images } from "../assets/images";
 import Card from "../components/Card";
+import SteamAPI from "../components/SteamAPI";
 
 export default function Hobby() {
   const videogames = [
@@ -65,6 +66,10 @@ export default function Hobby() {
           {videogames.map((c, i) => (
             <Card key={i} name={c.gameName} variant="gameCard" link={c.link} />
           ))}
+        </div>
+        <div className="m-2 w-full flex flex-col items-center">
+          <h1 className="text-xl font-semibold my-2">A cosa sto giocando</h1>
+          <SteamAPI />
         </div>
 
         <h1 className="text-4xl font-bold mt-25">Scrittura</h1>
