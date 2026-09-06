@@ -28,14 +28,14 @@ export default function Home() {
   const linkContact = [
     {
       iconImg: images.email,
-      link: "mailto:leomesseri98@gmail.com",
-      title: "leomesseri98@gmail.com",
+      link: "mailto:leonardo.messeri@protonmail.com",
+      title: "leonardo.messeri@protonmail.com",
       subtitle: "Email",
     },
     {
       iconImg: images.phone,
       link: "tel:+393393592635",
-      title: "339 359 2635",
+      title: "+39 339 359 2635",
       subtitle: "Cellulare",
     },
   ];
