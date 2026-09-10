@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const changelogEntries = [
   {
+    version: "1.3.1",
+    notes: ["Piccole modifiche lato UI", "Curriculum aggiornato", "Email aggiornata"],
+  },
+  {
     version: "1.3",
     notes: ["Aggiunto footer in ogni pagina", "Aggiunto Changelog nel footer"],
   },
@@ -51,7 +55,7 @@ export default function Changelog({ open, onClose }: ChangelogProps) {
               className={`${index === 0 ? "mb-15" : "mb-8"}`}
             >
               <p
-                className={`${index === 0 ? "text-3xl underline" : "text-2xl"} font-semibold mb-2`}
+                className={`${index === 0 ? "text-3xl" : "text-2xl"} font-bold mb-2`}
               >
                 Versione {entry.version}
               </p>

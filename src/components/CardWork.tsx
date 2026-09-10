@@ -17,7 +17,7 @@ export default function CardWork({
 }: WorkProps) {
   return (
     <div
-      className="flex items-center gap-15 bg-white rounded-3xl shadow-2xl p-5 m-3.5 md:m-0
+      className="flex items-center gap-15 bg-white rounded-3xl shadow-lg p-5 m-3.5 md:m-0
       transition transform duration-200 ease-in-out cursor-pointer hover:scale-103"
       onClick={() => window.open(link, "_blank")}
     >

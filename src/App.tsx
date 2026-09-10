@@ -41,11 +41,11 @@ function App() {
 
                     <ul
                       className="flex mx-auto gap-2.5 md:gap-3
-                    font-bold text-lg md:text-xl
-                    border border-dark-brown bg-white
-                    p-2.5 mt-6
-                    rounded-full w-fit shadow-lg select-none
-                    justify-center"
+                        font-bold text-lg md:text-xl
+                        border border-dark-brown bg-white
+                        p-2.5 mt-6
+                        rounded-full w-fit select-none
+                        justify-center"
                     >
                       <li>
                         <NavLink
@@ -99,7 +99,7 @@ function App() {
         )}
       </div>
       <footer className="text-white text-center text-sm md:text-xs py-1.5 mt-20 bg-gray-800">
-        <p>by Leonardo Messeri • ©2026 • v1.3</p>
+        <p>by Leonardo Messeri • ©2026 • v1.3.1</p>
         <div className="mt-1.5">
           <span
             onClick={() => setOpen(true)}

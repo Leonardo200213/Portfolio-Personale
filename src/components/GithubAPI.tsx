@@ -33,7 +33,7 @@ export default function GithubAPI() {
           key={project.id}
           href={project.html_url}
           className="flex flex-col w-full bg-white rounded-3xl justify-center items-center h-30
-          shadow-2xl p-5 transition transform duration-200 ease-in-out cursor-pointer hover:scale-103"
+          shadow-xl p-5 transition transform duration-200 ease-in-out cursor-pointer hover:scale-103"
         >
           <h1 className="font-semibold text-xl">{project.name}</h1>
           <p className="text-lg">{project.description}</p>

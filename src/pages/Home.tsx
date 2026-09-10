@@ -27,7 +27,7 @@ export default function Home() {
 
   const linkContact = [
     {
-      iconImg: images.email,
+      iconImg: images.pmail,
       link: "mailto:leonardo.messeri@protonmail.com",
       title: "leonardo.messeri@protonmail.com",
       subtitle: "Email",
@@ -45,7 +45,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto mt-15">
         <h1 className="text-4xl font-bold ml-10 md:ml-0">Chi sono</h1>
         <div className="flex flex-col justify-center items-center md:flex-row md:items-center">
-          <img src={foto} className="rounded-3xl w-65 my-10 shadow-xl " />
+          <img src={foto} className="rounded-3xl w-65 my-10" />
           <div className="m-5 ml-13 mr-15 max-w-sm md:max-w-xl text-xl text-justify space-y-8">
             <p>
               Mi chiamo <b>Leonardo Messeri</b>, sono una persona curiosa e
@@ -75,7 +75,7 @@ export default function Home() {
 
       {/*link */}
       <div className="max-w-4xl mx-auto mt-20">
-        <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto w-full px-4 mb-20">
+        <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto w-full px-4 mb-20 ">
           {linkPage.map((c, i) => (
             <div
               key={i}

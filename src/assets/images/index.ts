@@ -18,6 +18,7 @@ import pdf from "./tl.png";
 import rgis from "./rgis.png";
 import phone from "./phone.png";
 import email from "./email.png";
+import pmail from "./pmail.png";
 import layton from "./layton.png";
 
 export const images = {
@@ -41,5 +42,6 @@ export const images = {
   rgis,
   phone,
   email,
+  pmail,
   layton,
 };
